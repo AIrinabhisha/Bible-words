@@ -1,6 +1,6 @@
 // JavaScript for responsive layout adjustments
 document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".genesis, .exodus, .leviticus, .numbers, .deuteronomy, .judges, .joshua, .ruth");
+    const cards = document.querySelectorAll(".genesis, .exodus, .leviticus, .numbers, .deuteronomy, .judges, .joshua, .ruth,.numbers, .joshua, .ruth, .two-samuel,.two-kings, .two-chronicles, .nehemiah, .job, .proverbs, .isaiah, .lamentations,.daniel, .joel, .obadiah, .micah,.habakkuk, .haggai, .malachi,.deuteronomy, .judges, .one-samuel, .one-kings, .one-chronicles, .exra, .esther, .psalms, .ecclesiastes, .jeremiah,.ezekiel,.hosea,.amos, .jonah,.nahum,.zechariah,.zephaniah");
   
     function adjustLayout() {
       const screenWidth = window.innerWidth;
