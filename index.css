@@ -1,0 +1,175 @@
+.nav-container {
+  display: flex;
+  background-color: rgb(141, 17, 141);
+  padding: 22px;
+  align-items: center;
+}
+.logo{}
+.nav-container input {
+  display: inline;
+  padding: 8px;
+  padding-right: 55px;
+  border-radius: 15px;
+  border-color: palevioletred;
+  justify-content: center;
+}
+.version-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 64px;
+}
+body {
+  margin: 0%;
+  background-color: palevioletred;
+}
+.head-container {
+    display: flex;
+    flex-direction: column;
+  margin: 23px;
+  padding-bottom: 54px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.genesis {
+  padding: 66px;
+  margin-left: 33px;
+  border-radius: 33px;
+  width: 18.5%;
+  background-color: aliceblue;
+  text-align: center;
+  transition: transform 0.2s;
+  
+  
+}
+.genesis button {
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: pink;
+  border-color: plum;
+}
+.exodus {
+  padding: 52px;
+  margin-left: 33px;
+  border-radius: 33px;
+  width: 18.5%;
+  background-color: pink;
+}
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.exodus button{
+    display: flex;
+    padding: 6px 76px 6px 76px;
+    border-radius: 33px;
+    background-color: aliceblue;
+    border-color: plum;
+}
+.leviticus{
+    padding: 52px;
+  margin-left: 33px;
+  border-radius: 33px;
+  width: 18.5%;
+  background-color: aliceblue;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.leviticus button{
+    display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: pink;
+  border-color: plum;
+}
+.numbers, .joshua, .ruth, .two-samuel,.two-kings, .two-chronicles, .nehemiah, .job, .proverbs, .isaiah, .lamentations,.daniel, .joel, .obadiah, .micah,.habakkuk, .haggai, .malachi{
+    padding: 52px;
+    margin-left: 33px;
+    border-radius: 33px;
+    width: 18.5%;
+    background-color: pink;
+    margin-top: 50px;
+}
+.numbers button{
+    display: flex;
+    padding: 6px 76px 6px 76px;
+    border-radius: 33px;
+    background-color: aliceblue;
+    border-color: plum;
+}
+.deuteronomy, .judges, .one-samuel, .one-kings, .one-chronicles, .exra, .esther, .psalms, .ecclesiastes, .jeremiah,.ezekiel,.hosea,.amos, .jonah,.nahum,.zechariah,.zephaniah{
+    padding: 52px;
+    margin-left: 33px;
+    border-radius: 33px;
+    width: 18.5%;
+    background-color: aliceblue;
+    text-align: center;
+    transition: transform 0.2s;
+    margin-top: 50px;
+}
+.deuteronomy button{
+    display: flex;
+    padding: 6px 76px 6px 76px;
+    border-radius: 33px;
+    background-color: pink;
+    border-color: plum;
+}
+.joshua button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: aliceblue;
+  border-color: plum;
+}
+.judges button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: pink;
+  border-color: plum;
+}
+.ruth button{
+  display: flex;
+  padding: 6px 7px 6px 7px;
+  border-radius: 33px;
+  background-color: aliceblue;
+  border-color: plum;
+}
+.one-samuel button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: pink;
+  border-color: plum;
+}
+.two-samuel button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: aliceblue;
+  border-color: plum;
+}
+.one-samuel button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: pink;
+  border-color: plum;
+}
+.two-samuel button{
+  display: flex;
+  padding: 6px 76px 6px 76px;
+  border-radius: 33px;
+  background-color: aliceblue;
+  border-color: plum;
+}
+.hidden{
+  display: none;
+}
