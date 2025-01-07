@@ -173,3 +173,65 @@ img {
 .hidden{
   display: none;
 }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .nav ul {
+      justify-content: flex-end;
+      margin-right: 2rem;
+  }
+  .content {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+  .content {
+      padding: 1rem;
+  }
+}
