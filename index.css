@@ -1,237 +1,221 @@
-.nav-container {
-  display: flex;
-  background-color: rgb(141, 17, 141);
-  padding: 22px;
-  align-items: center;
-}
-.logo{}
-.nav-container input {
-  display: inline;
-  padding: 8px;
-  padding-right: 55px;
-  border-radius: 15px;
-  border-color: palevioletred;
-  justify-content: center;
-}
-.version-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 64px;
-}
-body {
-  margin: 0%;
-  background-color: palevioletred;
-}
-.head-container {
-    display: flex;
-    flex-direction: column;
-  margin: 23px;
-  padding-bottom: 54px;
-}
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.genesis {
-  padding: 66px;
-  margin-left: 33px;
-  border-radius: 33px;
-  width: 18.5%;
-  background-color: aliceblue;
-  text-align: center;
-  transition: transform 0.2s;
-  
-  
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
-.genesis button {
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: pink;
-  border-color: plum;
+
+.nav-container {
+    background: linear-gradient(135deg, #317873 0%, #1CAC78 100%);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.exodus {
-  padding: 52px;
-  margin-left: 33px;
-  border-radius: 33px;
-  width: 18.5%;
-  background-color: pink;
+
+.logo img {
+    height: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
-img {
+
+/* Card Layout */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    max-width: 1400px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, #317873, #3CB371);
+}
+
+/* Grid Layout for Books */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.version-1 > div {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #6C7C59;
+    position: relative;
+    overflow: hidden;
+}
+
+.version-1 > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.version-1 > div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, #1CAC78, #3CB371);
+    transition: all 0.3s ease;
+}
+
+.version-1 > div:hover::after {
+    height: 6px;
+}
+
+.version-1 img {
+    width: 100%;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-}
-.exodus button{
-    display: flex;
-    padding: 6px 76px 6px 76px;
-    border-radius: 33px;
-    background-color: aliceblue;
-    border-color: plum;
-}
-.leviticus{
-    padding: 52px;
-  margin-left: 33px;
-  border-radius: 33px;
-  width: 18.5%;
-  background-color: aliceblue;
-  text-align: center;
-  transition: transform 0.2s;
-}
-.leviticus button{
-    display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: pink;
-  border-color: plum;
-}
-.numbers, .joshua, .ruth, .two-samuel,.two-kings, .two-chronicles, .nehemiah, .job, .proverbs, .isaiah, .lamentations,.daniel, .joel, .obadiah, .micah,.habakkuk, .haggai, .malachi{
-    padding: 52px;
-    margin-left: 33px;
-    border-radius: 33px;
-    width: 18.5%;
-    background-color: pink;
-    margin-top: 50px;
-}
-.numbers button{
-    display: flex;
-    padding: 6px 76px 6px 76px;
-    border-radius: 33px;
-    background-color: aliceblue;
-    border-color: plum;
-}
-.deuteronomy, .judges, .one-samuel, .one-kings, .one-chronicles, .exra, .esther, .psalms, .ecclesiastes, .jeremiah,.ezekiel,.hosea,.amos, .jonah,.nahum,.zechariah,.zephaniah{
-    padding: 52px;
-    margin-left: 33px;
-    border-radius: 33px;
-    width: 18.5%;
-    background-color: aliceblue;
-    text-align: center;
-    transition: transform 0.2s;
-    margin-top: 50px;
-}
-.deuteronomy button{
-    display: flex;
-    padding: 6px 76px 6px 76px;
-    border-radius: 33px;
-    background-color: pink;
-    border-color: plum;
-}
-.joshua button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: aliceblue;
-  border-color: plum;
-}
-.judges button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: pink;
-  border-color: plum;
-}
-.ruth button{
-  display: flex;
-  padding: 6px 7px 6px 7px;
-  border-radius: 33px;
-  background-color: aliceblue;
-  border-color: plum;
-}
-.one-samuel button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: pink;
-  border-color: plum;
-}
-.two-samuel button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: aliceblue;
-  border-color: plum;
-}
-.one-samuel button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: pink;
-  border-color: plum;
-}
-.two-samuel button{
-  display: flex;
-  padding: 6px 76px 6px 76px;
-  border-radius: 33px;
-  background-color: aliceblue;
-  border-color: plum;
-}
-.hidden{
-  display: none;
-}
-/* General Styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
 }
 
-.header {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+.version-1 h1 {
+    color: #317873;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
-.nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+.version-1 p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    min-height: 60px;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
+/* Button Styles */
+.show-modal {
+    background: linear-gradient(to right, #1CAC78, #3CB371);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(28, 172, 120, 0.3);
 }
 
-.content {
-  padding: 2rem;
-  text-align: center;
+.show-modal:hover {
+    background: linear-gradient(to right, #3CB371, #1CAC78);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(28, 172, 120, 0.4);
 }
 
-.footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
+/* Chart Visualization */
+.head-container {
+    position: relative;
 }
 
-/* Desktop Styles */
-@media (min-width: 768px) {
-  .nav ul {
-      justify-content: flex-end;
-      margin-right: 2rem;
-  }
-  .content {
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-  }
+.head-container::before {
+    content: 'Old Testament Books';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #317873;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
-  .nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
-  }
-  .content {
-      padding: 1rem;
-  }
+/* Color Coding by Categories */
+.genesis, .exodus, .leviticus, .numbers, .deuteronomy {
+    border-top-color: #317873 !important; /* Pentateuch */
+}
+
+.joshua, .judges, .ruth, .one-samuel, .two-samuel, .one-kings, .two-kings {
+    border-top-color: #1CAC78 !important; /* Historical Books */
+}
+
+.one-chronicles, .two-chronicles, .exra, .nehemiah, .esther {
+    border-top-color: #3CB371 !important; /* More History */
+}
+
+.job, .psalms, .proverbs, .ecclesiastes {
+    border-top-color: #6C7C59 !important; /* Wisdom Literature */
+}
+
+.isaiah, .jeremiah, .lamentations, .ezekiel, .daniel, 
+.hosea, .joel, .amos, .obadiah, .jonah, .micah, 
+.nahum, .habakkuk, .zephaniah, .haggai, .zechariah, .malachi {
+    border-top-color: #5D8BF4 !important; /* Prophets */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .card {
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        padding: 0.75rem 1rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* Modal Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
